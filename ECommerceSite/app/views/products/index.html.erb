@@ -2,13 +2,13 @@
 
 <table>
   <tr>
-    <th>Productid</th>
+    <th>Product ID</th>
     <th>Name</th>
     <th>Quantity</th>
     <th>Price</th>
-    <th>Rentalid</th>
+    <th>Rental ID</th>
     <th>Description</th>
-    <th></th>
+    <th>Category ID</th>
     <th></th>
     <th></th>
   </tr>
@@ -21,6 +21,7 @@
     <td><%= product.price %></td>
     <td><%= product.rentalid %></td>
     <td><%= product.description %></td>
+    <td><%= product.categoryid %></td>
     <td><%= link_to 'Show', product %></td>
     <td><%= link_to 'Edit', edit_product_path(product) %></td>
     <td><%= link_to 'Destroy', product, confirm: 'Are you sure?', method: :delete %></td>
