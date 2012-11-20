@@ -1,6 +1,15 @@
 class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
+  
+  def require_sudo
+    authenticate_or_request_with_http_basic do |username, password|
+      username == 'admin' || password == 'catdance'
+    end
+  end
+  
+  before_filter :require_sudo, :only => [:edit, :update, :destroy, :create]
+  
   def index
     @categories = Category.all
 
