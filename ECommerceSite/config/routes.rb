@@ -1,4 +1,20 @@
 ECommerceSite::Application.routes.draw do
+  resources :categories
+
+  resources :addresses
+
+  resources :customers
+
+  resources :provinces
+
+  resources :rentals
+
+  resources :administrations
+
+  resources :orders
+
+  resources :products
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

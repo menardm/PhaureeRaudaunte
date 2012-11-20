@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rentalid: 1
+  name: MyString
+  price: 9.99
+  animaltype: MyString
+  workertype: MyString
+  availability: false
+
+two:
+  rentalid: 1
+  name: MyString
+  price: 9.99
+  animaltype: MyString
+  workertype: MyString
+  availability: false

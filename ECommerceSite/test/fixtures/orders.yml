@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  orderid: 1
+  quantity: 1
+  gst: 9.99
+  pst: 9.99
+  hst: 9.99
+  customerid: 1
+
+two:
+  orderid: 1
+  quantity: 1
+  gst: 9.99
+  pst: 9.99
+  hst: 9.99
+  customerid: 1

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Administrationid:</b>
+  <%= @administration.administrationid %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @administration.username %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @administration.password %>
+</p>
+
+
+<%= link_to 'Edit', edit_administration_path(@administration) %> |
+<%= link_to 'Back', administrations_path %>
