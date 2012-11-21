@@ -1,3 +1,50 @@
 // Place all the styles related to the Rentals controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com
+
+#body
+{
+    width: 68%;
+    float: right;
+    margin-top: 15px;
+}
+
+#main
+{
+    border: 6px black solid;
+    width: 82%;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    background-color: #D8D8D8;
+    -moz-box-shadow: 5px 5px 5px #888;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    box-shadow: 5px 5px 5px #888;
+}
+
+#main:hover
+{
+    padding: 15px;
+    font-size: 17px;
+}
+
+#edit_function
+{
+    float: right;
+    margin: 20px;
+}
+
+img
+{
+    margin: 10px 10px 10px 20px;
+    border: 2px black solid;
+    border-radius: 10px;
+    -moz-box-shadow: 5px 5px 5px #888;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.name
+{
+    margin: 20px;
+}

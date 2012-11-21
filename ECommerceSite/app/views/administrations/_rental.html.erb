@@ -1,20 +1,15 @@
-<div id = "main">
-        <div id = "edit_function">
-            <p>
-                <%= link_to 'Edit', edit_rental_path(rental) %>
-                <%= link_to 'Delete', rental, :method => :delete, :confirm => 'Are you sure you want to delete this post?' %>
-            </p>
-       </div>
-        
-        <div class = "name">
-            <h1><%= rental.name %></h1>
-        </div>
-        
-        <% if rental.image.present? %>
-            <%= image_tag rental.image, :width => '170', :height => '170' %>
-        <% end %>
-            
-    <div id = "body">
+<h2><%= rental.name %></h2>
+
+<p>
+    <%= link_to 'Edit', edit_rental_path(rental) %>
+    <%= link_to 'X', rental, :method => :delete, :confirm => 'Are you sure you want to delete this post?' %>
+</p>
+
+<div>
+    <% if rental.image.present? %>
+        <%= image_tag rental.image, :width => '200', :height => '200' %>
+    <% end %>
+
         <div>
             <b>Rental ID:</b>
             <%= rental.rentalid %>
@@ -44,5 +39,4 @@
             <b>Description:</b>
             <%= rental.description %>
         </div>
-    </div>
 </div>

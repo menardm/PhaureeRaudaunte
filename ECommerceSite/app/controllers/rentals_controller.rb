@@ -1,13 +1,13 @@
 class RentalsController < ApplicationController
   # GET /rentals
   # GET /rentals.json
-  def require_sudo
+  def authenticate
     authenticate_or_request_with_http_basic do |username, password|
       username == 'admin' || password == 'catdance'
     end
   end
   
-  before_filter :require_sudo, :only => [:edit, :update, :destroy, :create, :new]
+  before_filter :authenticate, :only => [:edit, :update, :destroy, :create, :new]
   
   def index
     @rentals = Rental.all
