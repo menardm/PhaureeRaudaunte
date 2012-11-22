@@ -1,3 +1,18 @@
+<%= form_tag search_result_path do %>
+    <%= text_field_tag :beaver %>
+    <%= submit_tag "Search" %>
+    <div>
+      <p>Search the occupation you require!</p>
+        <ul>
+          <li>Masonry</li> <li>Electrician</li>
+          <li>Heavy Machinery Operator</li>  <li>Demolition</li>
+          <li>Tree Removal</li> <li>Surveryor</li>
+          <li>Sewage</li> <li>Security</li>
+        </ul>
+    </div>
+<% end %>
 
 <%= render @rentals %>
+
 <%= link_to 'New Rental', new_rental_path %>
+

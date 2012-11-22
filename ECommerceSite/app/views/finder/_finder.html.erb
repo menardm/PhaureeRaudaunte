@@ -1,14 +1,7 @@
 <div id = "main"> 
-
-        <div id = "edit_function">
-            <p>
-                <%= link_to 'Edit', edit_rental_path(rental) %>
-                <%= link_to 'Delete', rental, :method => :delete, :confirm => 'Are you sure you want to delete this post?' %>
-            </p>
-       </div>
-        
         <div class = "name">
             <h1><%= rental.name %></h1>
+            <h1><%= product.name %></h1>
         </div>
         
         <% if rental.image.present? %>
@@ -34,16 +27,6 @@
         <div>
             <b>Price:</b>
             $<%= rental.price %>/week
-        </div>
-        
-        <div>
-            <b>Available:</b>
-            <%= rental.availability %>
-        </div>
-        
-        <div>
-            <b>Description:</b>
-            <%= rental.description %>
         </div>
     </div>
 </div>

@@ -1,5 +1,11 @@
 ECommerceSite::Application.routes.draw do
     
+  root :to => 'finder#index'
+  
+  match '/finder/find_beaver' => 'finder#find_beaver', :as => 'find_beaver'
+  
+  match '/finder/results' => 'finder#search_result', :as => 'search_result', :via => :post
+
   resources :categories
 
   resources :addresses
