@@ -1,0 +1,45 @@
+<% @rentals.each do |rental| %>  
+  <div id = "main"> 
+        
+          <div class = "name">
+              <h1><%= rental.name %></h1>
+          </div>
+          
+          <% if rental.image.present? %>
+              <%= image_tag rental.image, :width => '170', :height => '170' %>
+          <% end %>
+              
+      <div id = "body">
+          <div>
+              <b>Rental ID:</b>
+              <%= rental.rentalid %>
+          </div>
+          
+          <div>
+              <b>Animal Type:</b>
+            <%= rental.animaltype %>
+          </div>
+          
+          <div>
+              <b>Occupation:</b>
+              <%= rental.workertype %>
+          </div>
+          
+          <div>
+              <b>Price:</b>
+              $<%= rental.price %>/week
+          </div>
+          
+          <div>
+              <b>Available:</b>
+              <%= rental.availability %>
+          </div>
+          
+          <div>
+              <b>Description:</b>
+              <%= rental.description %>
+          </div>
+      </div>
+    
+    </div>
+<% end %>

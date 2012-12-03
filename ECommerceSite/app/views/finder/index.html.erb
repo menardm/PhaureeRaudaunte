@@ -1,3 +1,9 @@
-<%= render @rentals %>
+<div id = "onsale_finder">
+  <h2>On-sale this week!</h2>
+  <%= render :partial => 'finder', :collection => @rentals, :as => 'rental'%>
+</div>
 
-<%= render @products %>
+<div id = "recent_finder">
+  <h2>New arrivals!</h2>
+  <%= render :partial => 'finder', :collection => @rentals_new, :as => 'rental'%>
+</div>

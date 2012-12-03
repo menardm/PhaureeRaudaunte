@@ -11,9 +11,110 @@
  *= require_self
  *= require_tree .
 */
-
-#header
+html
 {
+    background-color: gray;
+}
+
+
+#mainHeader
+{
+    font-family: Oleo Script Swash Caps;
     text-align: center;
     margin-bottom: 10px;
+    background-color: red;
+    padding: 15px;
+    border: 3px #DBA901 solid;
+    border-radius: 3px;
+    font-size: 20px;
+
+}
+
+#mainHeader a
+{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.name_finder
+{
+    font-size: 6px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+#main_finder
+{
+   float: left;
+   width: 200px;
+   height: 200px;
+}
+
+.body_finder
+{
+      width: 35%;
+      font-size: 8px;
+      margin-left: 80px;
+      float: left;
+}
+
+.image_finder
+{
+    text-align: center;
+    margin-left: 40px;
+}
+
+.image_finder img
+{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+#onsale_finder
+{
+    margin-top: 100px;
+    border: 4px black solid;
+    width: 63%;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    background-color: #D8D8D8;
+    -moz-box-shadow: 5px 5px 5px #888;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    box-shadow: 5px 5px 5px #888;
+}
+
+#onsale_finder h2
+{
+    margin-left: 320px;
+}
+
+.adminHeader
+{
+    float: right;
+    position: relative;
+    bottom: 17px;
+}
+
+#recent_finder
+{
+    border: 4px black solid;
+    width: 63%;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    background-color: #D8D8D8;
+    -moz-box-shadow: 5px 5px 5px #888;
+    -webkit-box-shadow: 5px 5px 5px #888;
+    box-shadow: 5px 5px 5px #888;
+    margin-top: 100px;
+}
+
+#recent_finder h2
+{
+    margin-left: 350px;
 }

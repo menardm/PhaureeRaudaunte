@@ -1,32 +1,21 @@
-<div id = "main"> 
-        <div class = "name">
-            <h1><%= rental.name %></h1>
-            <h1><%= product.name %></h1>
+<div id = "main_finder">
+        <div class = "name_finder">
+                <h1><%= rental.name %></h1>
+        </div>
+      
+        <div class = "image_finder">
+                <% if rental.image.present? %>
+                      <a href="/rentals"><%= image_tag rental.image, :width => '170', :height => '170' %></a>
+                <% end %>
         </div>
         
-        <% if rental.image.present? %>
-            <%= image_tag rental.image, :width => '170', :height => '170' %>
-        <% end %>
-            
-    <div id = "body">
-        <div>
-            <b>Rental ID:</b>
-            <%= rental.rentalid %>
+        <div class = "body_finder">
+                <h3><b>Occupation:</b>
+                <%= rental.workertype %>
+                </h3>
+                
+                <h3><b>Price:</b>
+                $<%= rental.price %>/week
+                </h3>
         </div>
-        
-        <div>
-            <b>Animal Type:</b>
-          <%= rental.animaltype %>
-        </div>
-        
-        <div>
-            <b>Occupation:</b>
-            <%= rental.workertype %>
-        </div>
-        
-        <div>
-            <b>Price:</b>
-            $<%= rental.price %>/week
-        </div>
-    </div>
 </div>

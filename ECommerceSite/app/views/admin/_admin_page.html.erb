@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <div id = "adminNav">
+      <h2>Admin Toolbar</h2>
+      <nav>
+        <%= link_to 'Admin Home', admin_path%>
+        <%= link_to 'Products', products_path%>
+        <%= link_to 'Rentals', rentals_path%>
+        <%= link_to 'Customers', customers_path%>
+      </nav>
+    </div>
+  
+  </head>
+  <body>
+
+    <%= yield %>
+
+  </body>
+</html>
